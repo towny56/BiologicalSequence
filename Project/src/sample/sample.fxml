@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <padding>
+      <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+   </padding>
+   <children>
+      <GridPane layoutX="17.0" layoutY="336.0" prefHeight="159.0" prefWidth="684.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.79998779296875" minWidth="10.0" prefWidth="219.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.20001220703125" minWidth="10.0" prefWidth="15.199984741210926" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.19998779296878" minWidth="10.0" prefWidth="214.19998779296878" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.99999999999994" minWidth="10.0" prefWidth="17.40001220703124" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.8" minWidth="10.0" prefWidth="218.40003662109376" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="63.200006103515626" minHeight="10.0" prefHeight="63.200006103515626" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="47.8000244140625" minHeight="10.0" prefHeight="19.19999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.6" minHeight="10.0" prefHeight="76.80001220703124" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnLoadSequence" mnemonicParsing="false" onAction="#btnLoadSequenceClicked" prefHeight="46.0" prefWidth="225.0" text="Load sequence">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFormatSequence" mnemonicParsing="false" onAction="#btnFormatSequenceClicked" prefHeight="42.0" prefWidth="220.0" text="Format sequence" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnComputeSequence" mnemonicParsing="false" onAction="#btnComputeSequenceClicked" prefHeight="44.0" prefWidth="214.0" text="Compute sequence" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnQuit" mnemonicParsing="false" onAction="#btnQuitClicked" prefHeight="45.0" prefWidth="218.0" text="Quit" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClearSequence" mnemonicParsing="false" onAction="#btnClearSequenceClicked" prefHeight="43.0" prefWidth="218.0" text="Clear sequence" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <Line endX="583.29296875" endY="-1.2852085828781128" fill="#acacaca8" startX="-100.0" stroke="#0000007c" strokeWidth="2.0" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="17.0" layoutY="14.0" prefHeight="316.0" prefWidth="684.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="153.60001220703126" minHeight="10.0" prefHeight="35.200022125244146" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="295.9999870300293" minHeight="10.0" prefHeight="281.59997787475584" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="42.0" prefWidth="684.0" text="Sequence">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSequence" prefHeight="273.0" prefWidth="684.0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="17.0" layoutY="495.0" prefHeight="159.0" prefWidth="684.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="txtComputeSequence" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
